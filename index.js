@@ -15,6 +15,6 @@ app.get("/", (req, res) => {
 
 app.use("/", routes);
 
-app.listen(3007, () => {
+app.listen(process.env.PORT || 3007, () => {
   console.log("Welcome to server");
 });
