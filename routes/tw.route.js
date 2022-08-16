@@ -11,11 +11,13 @@ routes.post("/twvoucher", async (req, res) => {
       return res.json({
         success: true,
         amount: redeemed.amount,
+        msg: "เติมเงินเสร็จสิ้น",
       });
     })
     .catch(() => {
       return res.json({
         msg: "ลิ้งอั่งเปาไม่ถูกต้อง",
+        amount: "0",
       });
     });
 });
