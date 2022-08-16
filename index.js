@@ -15,6 +15,6 @@ app.get("/", (req, res) => {
 
 app.use("/", routes);
 
-app.listen(3000, () => {
-  console.log("Welcome to server http://localhost:3000");
+app.listen(3007, () => {
+  console.log("Welcome to server");
 });
